@@ -23,7 +23,7 @@ function CartPage() {
             </div>
         </nav>
         <main>
-            <div>
+            <div className = {styles.cart_item}>
             {
                 cart.map((prod, index) => (
                     <ProductCart 

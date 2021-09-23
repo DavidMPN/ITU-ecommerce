@@ -27,8 +27,8 @@ function ProductCart({ product }){
             </div>
             
             <div className = {styles.cart_MinusPlus}>
+
                 <button onClick = {() => decrementProduct(product)}><AiFillMinusSquare color="#555555" size={20}/></button>
-                
                 <h3 className = {styles.productCart_quant}>{ quant }</h3>
                 <button onClick = {() => incrementProduct(product,stock_qnt)}><AiFillPlusSquare color = "#CCCCCC"size={20} /></button>
                 
@@ -36,6 +36,7 @@ function ProductCart({ product }){
            
         </div>
             <button  className = {styles.cart_exit} onClick = {() => removeProduct(product)}><AiFillCloseCircle color="red" /></button>
+            <button  className = {styles.cart_exit_responsive} onClick = {() => removeProduct(product)}><h1>Remover</h1></button>
     </div>
 
 }

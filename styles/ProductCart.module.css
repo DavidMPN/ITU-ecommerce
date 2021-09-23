@@ -14,7 +14,6 @@
     
     width: 100%;
 
-    padding: 0 50px 0px 0px;
 
     border-width: 0px 0px 1px 0px;
     border-color: #CCCCCC;
@@ -22,7 +21,7 @@
 
 .productCart_image{
     height: 90%;
-    width: 120px;
+    width: 110px;
     padding-right: 30px;
 }
 
@@ -34,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100px;
+    width: 60px;
 }
 
 .productCart_quant{
@@ -48,11 +47,115 @@
     margin-right: 20px;
 }
 
-.productCart_title{
+.productCart_price, .h4 {
+  font-size: calc(0.3em + 1vw);
+  color: #CCCCCC;
+}
+
+.productCart_title , .h3{
     color: #CCCCCC;
+
+    font-size: calc(0.4em + 1vw);
 }
 
 .productCart_title,
 .productCart_price {
     width: calc(50% - 50px);
+}
+
+.cart_exit_responsive{
+    display: none;
+}
+
+@media only screen and (max-device-width: 400px) {
+    
+    .cart_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+        width: 200px;
+        background-color: #212121;
+        border-radius: 6px;
+    }
+
+    .cart_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+    }
+
+
+    .productCart_image{
+        height: 90%;
+        width: 100%;
+        padding:0;
+        border-radius: 5px;
+    }
+    
+    .cart_image{
+        width: 100%;
+        height: 40%;
+        border: 1px;
+    }
+
+    .cart_exit{
+        display: flex;
+    }
+    
+    .cart_MinusPlus{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60px;
+    }
+    
+    .productCart_quant{
+        color: #CCCCCC;
+    }
+    
+    .productCart_price{
+        color: #CCCCCC;
+        text-align: end;
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+    .productCart_price, .h4 {
+      font-size: 10px;
+      margin: 0;
+    }
+    
+    .productCart_title{
+        color: #CCCCCC;
+        font-size: 12px;
+    }
+    
+    .productCart_title,
+    .productCart_price {
+        width: calc(50% - 50px);
+    }
+
+    .cart_exit{
+        display: none;
+    }
+
+    .cart_exit_responsive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        background-color: red;
+        margin-top: 4px;
+        border-radius: 5px;
+    }
+
+    .cart_exit_responsive, .h1{
+        font-size: 8px;
+    }
+
 }
