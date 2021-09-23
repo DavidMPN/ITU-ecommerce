@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -15,8 +14,9 @@
     justify-content: center;
     align-items: center;
 
-    width: 600px;
-
+    width: 80%;
+    max-width: 600px;
+    margin-top: 50px;
     padding: 50px 0;
     
     background-color: #212121;
@@ -26,7 +26,7 @@
 
 .adminform input {
     margin: 20px 0;
-    width: 400px;
+    width: 80%;
     height: 30px;
     padding: 20px;
     color: #CCCCCC;
@@ -51,7 +51,7 @@
 .buttonsContainer {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 80%;
     margin-top: 0;
 }
 
@@ -64,7 +64,7 @@
 }
 /* Secondary Voltar */
 .secondary_button {
-    margin-right: 100px;
+    margin-right: 10%;
     background-color: #212121;
     color: #CCCCCC;
     border-style: solid;
@@ -74,8 +74,9 @@
 
 .sumPrice
 {
-    padding-left: 280px;
-    color: #CCCCCC;   
+    align-self: flex-end;
+    color: #CCCCCC;
+    margin-right:10%;
 }
 
 .warning
